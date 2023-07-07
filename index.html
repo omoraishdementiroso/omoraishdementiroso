@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>O MoraisHD é mentiroso?</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Arial Black', sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Calculate the number of days
+      var currentDate = new Date();
+      var targetDate = new Date("2023-07-04");
+      var timeDiff = Math.abs(currentDate.getTime() - targetDate.getTime());
+      var daysCount = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+      // Update the placeholder with the number of days
+      document.getElementById("daysCount").innerText = daysCount;
+    });
+  </script>
+</head>
+<body>
+  <h1>O MoraisHD não é desmentido há <span id="daysCount">...</span> dias</h1>
+  <img src="https://i.pinimg.com/280x280_RS/f4/a2/51/f4a25148dafce7eef532d7f94a838116.jpg">
+
+</body>
+</html>
